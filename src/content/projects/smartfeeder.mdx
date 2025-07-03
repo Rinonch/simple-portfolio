@@ -1,0 +1,114 @@
+---
+title: Smart Feeder Ikan
+summary: Sistem otomatis pemberi makan ikan berbasis IoT yang dapat dipantau dan dikendalikan melalui antarmuka web. Menggunakan ESP32, sensor, dan integrasi MQTT untuk kontrol dan monitoring waktu nyata.
+tags:
+    - PHP
+    - Javascript
+    - MQTT
+    - IoT
+    - ESP32
+startDate: 2024-04-07
+endDate: 2024-04-09
+author: Zaidan Arrifqi
+url: http://feeder.tk2b.my.id/
+cover: './images/smartfeeder/Feeder_beranda.png'
+ogImage: './images/smartfeeder/Feeder_cover.png'
+---
+
+<div id="top" name="top"></div>
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Role](#role)
+3. [Problem](#problem)
+4. [Goal](#goal)
+5. [Solution](#solution)
+6. [User Flow](#user-flow)
+7. [Testing & Result](#testing--result)
+8. [Challenges and Learnings](#challenges-and-learnings)
+9. [Final Thoughts](#final-thoughts)
+
+---
+
+## 📱 Overview
+**Smart Feeder Ikan** adalah proyek IoT berbasis ESP32 yang dirancang untuk memberi makan ikan secara otomatis dan terjadwal. Sistem ini dapat dipantau dan dikendalikan melalui antarmuka berbasis web yang ringan dan responsif.
+
+Proyek ini cocok untuk peternak ikan, hobiis, ataupun sistem kolam otomatis skala kecil.
+
+---
+
+## 👨‍💻 Role
+- **Fullstack Developer**: Backend (PHP + MySQL), Frontend (HTML/CSS/JS)
+- **IoT Programmer**: Firmware ESP32 menggunakan Arduino IDE
+- **UI Designer**: Desain UI berbasis komponen dengan gaya ramah pengguna
+
+---
+
+## ❓ Problem
+1. Pemilik kolam sering lupa atau terlambat memberi makan ikan.
+2. Tidak adanya sistem monitoring jarak jauh status perangkat.
+3. Kesulitan mengatur jadwal otomatis dan manual pemberian makan.
+
+---
+
+## 🎯 Goal
+- Menyediakan antarmuka mudah digunakan untuk mengatur jadwal makan ikan.
+- Memberikan fitur kendali manual dari jarak jauh melalui web.
+- Memantau status perangkat (online/offline, stok pakan, waktu terakhir makan).
+
+---
+
+## 💡 Solution
+Sistem ini terdiri dari dua bagian utama:
+
+1. **Perangkat Keras:**
+   - Mikrokontroler: ESP32
+   - Servo untuk membuka pakan
+   - RTC (Real-Time Clock) untuk akurasi waktu
+   - LCD I2C untuk tampilan lokal
+   - Sensor stok pakan (opsional)
+
+2. **Perangkat Lunak:**
+   - Web dashboard (PHP, JS)
+   - Komunikasi MQTT antara server dan ESP32
+   - Sistem jadwal otomatis (berbasis RTC)
+   - Fitur kontrol manual dari web
+
+---
+
+## 🔄 User Flow
+1. **Login Dashboard**
+2. **Lihat Status Feeder**
+   - Hari/Tanggal & Waktu sekarang
+   - Status perangkat: Online / Offline
+   - Stok pakan
+3. **Atur Jadwal**
+   - Waktu pagi dan sore
+   - Tombol Simpan / Reset Jadwal
+4. **Kendali Manual**
+   - Tombol "Kasih Makan Sekarang"
+5. **Log Aktivitas (future feature)**
+
+---
+
+## 🧪 Testing & Result
+- **ESP32** sukses menjalankan perintah dari dashboard melalui MQTT.
+- Jadwal berhasil tersimpan dan dieksekusi sesuai waktu RTC.
+- Web UI berjalan lancar di browser desktop dan mobile.
+- Performa stabil saat koneksi internet aktif.
+
+---
+
+## ⚙️ Challenges and Learnings
+1. **Sinkronisasi waktu** antara RTC dan web membutuhkan validasi ulang.
+2. **Handling MQTT disconnect** penting agar sistem tetap responsif.
+3. **Desain UI sederhana** sangat membantu user non-teknis.
+
+---
+
+## ✨ Final Thoughts
+- Sistem ini menjadi solusi praktis untuk manajemen pemberian makan ikan secara otomatis.
+- Bisa dikembangkan lebih lanjut dengan sensor kadar air, kamera monitoring, dan notifikasi Telegram.
+- Cocok dijadikan sebagai proyek akhir kuliah atau produk mini untuk aquaculture.
+
+---

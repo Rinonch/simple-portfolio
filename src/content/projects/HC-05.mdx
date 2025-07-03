@@ -1,0 +1,111 @@
+---
+title: Kendali Lampu Menggunakan Handphone
+summary: Sebuah pengendali lampu menggunakan Arduino UNO berbasis Bluetooth yang dirancang untuk memudahkan otomasi dan monitoring perangkat elektronik sederhana. Proyek ini menggunakan bahasa pemrograman C/C++ di Arduino IDE.
+tags:
+    - C
+    - C++
+    - Arduino IDE
+startDate: 2024-12-20
+endDate: 2024-12-20
+author: Zaidan Arrifqi
+url: https://github.com/Rinonch/arduino-uno-app
+cover: './images/HC-05/Arduino1.png'
+ogImage: './images/HC-05/accnt.webp'
+---
+
+<div id="top" name="top"></div>
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Role](#role)
+3. [Problem](#problem)
+4. [Goal](#goal)
+5. [Solution](#solution)
+6. [User Flow](#user-flow)
+7. [Testing & Result](#testing--result)
+8. [Challenges and Learnings](#challenges-and-learnings)
+9. [Final Thoughts](#final-thoughts)
+
+---
+
+## 📱 Overview
+**Aplikasi Dengan Arduino UNO** adalah proyek pengendali lampu berbasis Bluetooth yang menggunakan Arduino UNO sebagai otak dari sistem ini. Aplikasi ini memungkinkan pengguna untuk mengendalikan dan memantau perangkat elektronik sederhana seperti lampu, dari jarak jauh melalui koneksi Bluetooth.
+
+Proyek ini sangat cocok untuk mereka yang ingin memulai otomasi rumah dengan biaya terjangkau dan perangkat yang mudah didapat.
+
+---
+
+## 👨‍💻 Role
+- **Arduino Developer**: Firmware programming menggunakan Arduino IDE (C/C++)
+- **Android Developer**: Aplikasi mobile untuk kontrol Bluetooth
+- **Hardware Engineer**: Perancangan rangkaian dengan Arduino UNO dan modul HC-05
+
+---
+
+## ❓ Problem
+1. Pengendalian perangkat elektronik yang masih dilakukan secara manual.
+2. Tidak adanya sistem monitoring untuk mengetahui status perangkat apakah menyala atau mati.
+3. Kesulitan dalam mengatur jadwal pengendalian perangkat.
+
+---
+
+## 🎯 Goal
+- Menyediakan aplikasi yang mudah digunakan untuk mengendalikan perangkat elektronik berbasis Arduino UNO.
+- Memberikan fitur monitoring status perangkat secara real-time.
+- Memungkinkan pengaturan jadwal otomatis untuk pengendalian perangkat.
+
+---
+
+## 💡 Solution
+Sistem ini terdiri dari dua bagian utama:
+
+1. **Perangkat Keras:**
+   - Mikrokontroler: Arduino UNO
+   - Modul Bluetooth untuk komunikasi nirkabel
+   - Relay untuk mengendalikan lampu
+   - Sensor (opsional) untuk monitoring kondisi lingkungan
+
+2. **Perangkat Lunak:**
+   - Aplikasi mobile (Android) untuk antarmuka pengguna
+   - Firmware Arduino untuk mengendalikan perangkat keras
+   - Sistem jadwal otomatis (berbasis waktu sistem)
+
+---
+
+## 🔄 User Flow
+1. **Buka Aplikasi**
+2. **Koneksi Bluetooth**
+   - Pilih perangkat Arduino UNO
+   - Hubungkan
+3. **Lihat Status Perangkat**
+   - Status perangkat: Menyala / Mati
+   - Kondisi lingkungan (jika ada sensor)
+4. **Atur Jadwal**
+   - Waktu hidup dan mati
+   - Tombol Simpan / Reset Jadwal
+5. **Kendali Manual**
+   - Tombol "Nyalakan Sekarang" / "Matikan Sekarang"
+
+---
+
+## 🧪 Testing & Result
+- **Arduino UNO** sukses menerima perintah dari aplikasi melalui koneksi Bluetooth.
+- Jadwal berhasil tersimpan dan dieksekusi sesuai waktu sistem.
+- Aplikasi berjalan lancar di perangkat Android.
+- Performa stabil saat diuji dengan berbagai skenario pengendalian.
+
+---
+
+## ⚙️ Challenges and Learnings
+1. **Komunikasi Bluetooth** antara Arduino dan aplikasi memerlukan pengaturan yang tepat.
+2. **Handling koneksi terputus** penting agar aplikasi tidak crash.
+3. **Desain UI yang responsif** sangat membantu pengalaman pengguna.
+
+---
+
+## ✨ Final Thoughts
+- Proyek ini merupakan langkah awal yang baik untuk memasuki dunia otomasi rumah.
+- Dapat dikembangkan lebih lanjut dengan menambahkan lebih banyak sensor dan aktuator.
+- Sangat cocok sebagai proyek pembelajaran atau sebagai dasar untuk proyek otomasi yang lebih kompleks.
+
+---

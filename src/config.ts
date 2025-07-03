@@ -14,65 +14,61 @@ export const SITE = {
 }
 
 export const ME = {
-    name: "VicBox Dot Dev",
-    profession: "Software Engineer | Full Stack Developer",
-    profileImage: "pp2.png",
+    name: "Zaidan Arrifqi",
+    profession: "Junior Web Developer | Telecommunication Engineer",
+    profileImage: "Foto.jpeg",
     profileFacts: [
         {
-            value: 10,
+            value: 3,
             description: "Years of Experience"
         },
         {
             value: 5,
             description: "Completed Projects"
-        },
-        {
-            value: 4,
-            description: "Satisfied Clients"
         }
     ],
     contactInfo: {
-        email: "vicbox.dev@vicbox.dev",
+        email: "zaidanarrifqi@gmail.com",
         linkedin: "https://www.linkedin.com/in/victor-alvaradohn",
         resumeDoc: "resume.pdf",
     },
-    aboutMe: "I am a software engineer with a passion for web development. I have experience in building web " + "applications using modern technologies. I am a self-taught developer who enjoys learning new things and " + "sharing knowledge with others.",
+    aboutMe: "I am a junior web developer and telecommunication engineer with a strong interest in technology and innovation. I enjoy building web applications, learning new programming skills, and exploring the world of telecommunications. I am passionate about continuous learning and collaborating on creative projects.",
 }
 
 export const SOCIALS = [
     {
         name: "Twitter",
-        url: "https://twitter.com/vicbox.dev",
+        url: "https://x.com/4sh_rn",
         icon: "twitter-x-fill",
         show: true
     },
     {
         name: "Facebook",
-        url: "https://www.facebook.com/vicbox.dev",
+        url: "https://www.facebook.com/4sh.rn",
         icon: "facebook-fill",
         show: false
     },
     {
         name: "Instagram",
-        url: "https://www.instagram.com/vicbox.dev",
+        url: "https://www.instagram.com/idxwnz",
         icon: "instagram-fill",
         show: true
     },
     {
         name: "Youtube",
-        url: "https://www.youtube.com/vicbox.dev",
+        url: "https://www.youtube.com/@4shrnn",
         icon: "youtube-fill",
         show: true
     },
     {
         name: "TikTok",
-        url: "https://tiktok.com/vicbox.dev",
+        url: "https://tiktok.com/idxwnz",
         icon: "tik-fill",
         show: false
     },
     {
         name: "GitHub",
-        url: "https://github.com/vicbox.dev",
+        url: "https://github.com/Rinonch",
         icon: "github-fill",
         show: true
     }
